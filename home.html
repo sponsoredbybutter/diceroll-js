@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="diceroll.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>Diceroll.js</title>
+  </head>
+  <body>
+    <h1 class="text-center">Diceroll.js</h1>
+
+    <span class="container">
+      <span class="row">
+
+        <span class="col-lg-4 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">100</span>
+              <p>
+                <span id="counter-100-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+                <span id="counter-100-val" class="counter-value">0</span>
+                <span id="counter-100-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+              </p>
+              <p>
+                <img class="dice" src="images/d20.png">
+              </p>
+          </div>
+        </span>
+
+        <span class="col-lg-4 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">8</span>
+              <p>
+                <span id="counter-8-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+                <span id="counter-8-val" class="counter-value">0</span>
+                <span id="counter-8-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+              </p>
+              <p>
+                <img class="dice" src="images/d20.png">
+              </p>
+          </div>
+        </span>
+
+        <span class="col-lg-4 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">
+              20
+            </span>
+            <p>
+              <span id="counter-20-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+              <span id="counter-20-val" class="counter-value">1</span>
+              <span id="counter-20-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+            </p>
+            <p>
+              <img class="dice" src="images/d20.png">
+            </p>
+          </div>
+        </span>
+
+      </span>
+
+
+      <span class="row">
+
+        <span class="col-lg-3 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">10</span>
+            <p>
+              <span id="counter-10-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+              <span id="counter-10-val" class="counter-value">0</span>
+              <span id="counter-10-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+            </p>
+            <p>
+              <img class="dice" src="images/d20.png">
+            </p>
+          </div>
+        </span>
+
+
+        <span class="col-lg-3 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">6</span>
+              <p>
+                <span id="counter-6-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+                <span id="counter-6-val" class="counter-value">0</span>
+                <span id="counter-6-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+              </p>
+              <p>
+                <img class="dice" src="images/d20.png">
+              </p>
+          </div>
+        </span>
+
+        <span class="col-lg-3 col-sm-12">
+          <div class="circle">
+              <span class="dice-type">4</span>
+                <p>
+                  <span id="counter-4-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+                  <span id="counter-4-val" class="counter-value">0</span>
+                  <span id="counter-4-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+                </p>
+                <p>
+                  <img class="dice" src="images/d20.png">
+                </p>
+          </div>
+        </span>
+
+        <span class="col-lg-3 col-sm-12">
+          <div class="circle">
+            <span class="dice-type">12</span>
+              <p>
+                <span id="counter-12-min" class="minus-sign"><i class="fas fa-minus-circle"></i></span>
+                <span id="counter-12-val" class="counter-value">0</span>
+                <span id="counter-12-plus" class="plus-sign"><i class="fas fa-plus-circle"></i></span>
+              </p>
+              <p>
+                <img class="dice" src="images/d20.png">
+              </p>
+          </div>
+        </span>
+
+      </span>
+
+      <h1 id="roll-button" class="text-center text-bottom">ROLL</h1>
+      <span id="outcome" class="text-center">
+        <p>Enter how many dice you want to roll, or click roll now to roll 1d20</p>
+      </span>
+    </span>
+  </body>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="diceroll.js"></script>
+</html>
