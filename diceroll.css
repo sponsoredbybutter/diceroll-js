@@ -13,6 +13,10 @@ p {
   -ms-user-select: none; /* IE10+ */
 }
 
+#execute {
+  height: 300px
+}
+
 #outcome {
   color: black;
   font-size: 30px;
@@ -22,7 +26,6 @@ p {
 h1#roll-button {
   color: red;
   text-align: center;
-  margin: auto auto;
 }
 
 #roll-button {
@@ -31,7 +34,7 @@ h1#roll-button {
   height: 100px;
   margin: auto auto;
   transition: .25s;
-  vertical-align: middle;
+
 }
 
 #roll-button:hover {
