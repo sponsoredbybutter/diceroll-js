@@ -11,6 +11,46 @@ var diceTypes = {
   hundred: [99, 0]
 };
 
+//Macro start
+$(".m_macro").click(function(){
+  var id = this.id;
+  var dice = id + "_text";
+
+  var dice_str = $("#" + dice).text();
+  var dice_num = dice_str.substr(0, dice_str.indexOf('d'));
+  var dice_val = dice_str.substr(dice_str.indexOf('d') + 1);
+
+  var macro_name = $("#" + id).text();
+  //macro_name = macro_name.substr(0, macro_name.indexOf(' '));
+
+  var result = rollmacro(dice_num, dice_val);
+  $('#outcome').html(macro_name + ": " + result);
+});
+
+function rollmacro(dice_num, dice_val)
+{
+  var result = "";
+  var total = 0;
+
+  var roll = Math.round(Math.random() * dice_val) + 1;
+
+  result += roll;
+  total += roll;
+
+  for(var i = 0; i < dice_num - 1; i++)
+  {
+    roll = Math.round(Math.random() * dice_val) + 1;
+    result += " + " + roll;
+    total += roll;
+  }
+
+  result += " = " + total;
+
+  return result;
+}
+
+
+
 //100 sided dice controller
 
 $("#counter-100-plus").click(function(){

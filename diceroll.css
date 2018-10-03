@@ -13,8 +13,14 @@ p {
   -ms-user-select: none; /* IE10+ */
 }
 
-#execute {
-  height: 300px
+#macro_section p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.m_macro {
+  color: purple;
+  font-size: 18px;
 }
 
 #outcome {
