@@ -1,0 +1,107 @@
+h1 {
+  color: purple;
+}
+
+body {
+  background: rgb(7,0,36);
+  background: linear-gradient(90deg, rgba(7,0,36,1) 0%, rgba(42,94,154,1) 0%, rgba(0,212,255,1) 59%);
+}
+
+p {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+}
+
+#macro_section p {
+  font-size: 30px;
+  text-align: center;
+}
+
+#macro_section {
+  background: silver;
+}
+
+.m_macro {
+  color: purple;
+  font-size: 18px;
+}
+
+#outcome {
+  color: black;
+  font-size: 30px;
+  height: 200px;
+}
+
+h1#roll-button {
+  color: red;
+  text-align: center;
+}
+
+#roll-button {
+  color: white;
+  background-color: purple;
+  height: 100px;
+  margin: auto auto;
+  transition: .25s;
+
+}
+
+#roll-button:hover {
+
+  color: purple;
+  background-color: white;
+  transition: .25s
+}
+
+.row {
+  text-align: center;
+  height: 300px;
+}
+
+.circle {
+  background-color: white;
+  border-radius: 25%;
+  width: 225px;
+  margin: 0 auto;
+}
+
+.col-lg-3 {
+
+}
+
+.dice {
+  height: 100px;
+}
+
+.fa-minus-circle {
+  font-size: 20px;
+  color: red;
+  margin-right: 20px;
+  transition: .25s;
+
+}
+.fa-minus-circle:hover {
+  font-size: 25px;
+  transition: .25s;
+}
+
+.fa-plus-circle {
+  font-size: 20px;
+  color: green;
+  margin-left: 20px;
+  transition: .25s;
+}
+.fa-plus-circle:hover {
+  font-size: 25px;
+  transition: .25s;
+}
+
+.counter-value {
+  font-size: 30px;
+}
+
+.dice-type {
+  font-size: 40px;
+  font-weight: strong;
+}
